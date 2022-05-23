@@ -32,10 +32,10 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
 	{
 		$message = "Password Must be >=6";
 	}
-	//elseif(strlen($_POST['phone']) < 10)  //cal phone length
-	//{
-		//$message = "invalid phone number!";
-	//}
+	elseif(strlen($_POST['phone']) < 8)  //cal phone length
+	{
+		$message = "Invalid phone number!";
+	}
 
     elseif (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) // Validate email address
     {
@@ -43,7 +43,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
     }
 	elseif(mysqli_num_rows($check_username) > 0)  //check username
      {
-    	$message = 'username Already exists!';
+    	$message = 'Username Already exists!';
      }
 	elseif(mysqli_num_rows($check_email) > 0) //check email
      {
@@ -87,7 +87,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="#">
-    <title>Starter Template for Bootstrap</title>
+    <title>Registration</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -112,15 +112,15 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
 							<?php
 						if(empty($_SESSION["user_id"]))
 							{
-								echo '<li class="nav-item"><a href="login.php" class="nav-link active">login</a> </li>
-							  <li class="nav-item"><a href="registration.php" class="nav-link active">signup</a> </li>';
+								echo '<li class="nav-item"><a href="login.php" class="nav-link active">Login</a> </li>
+                        <li class="nav-item"><a href="admin" class="nav-link active">Admin</a> </li>';
 							}
 						else
 							{
 									
 									
-										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">your orders</a> </li>';
-									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">logout</a> </li>';
+										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Your orders</a> </li>';
+									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
 							}
 
 						?>
@@ -212,25 +212,25 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                         <p></p>
                         <div class="panel">
                            <div class="panel-heading">
-                              <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq1" aria-expanded="false"><i class="ti-info-alt" aria-hidden="true"></i>Can I viverra sit amet quam eget lacinia?</a></h4>
+                              <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq1" aria-expanded="false"><i class="ti-info-alt" aria-hidden="true"></i>Can I order food?</a></h4>
                            </div>
                            <div class="panel-collapse collapse" id="faq1" aria-expanded="false" role="article" style="height: 0px;">
-                              <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id. </div>
+                              <div class="panel-body"> You can order food </div>
                            </div>
                         </div>
                         <!-- end:panel -->
                         <div class="panel">
                            <div class="panel-heading">
-                              <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq2" aria-expanded="true"><i class="ti-info-alt" aria-hidden="true"></i>Can I viverra sit amet quam eget lacinia?</a></h4>
+                              <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq2" aria-expanded="true"><i class="ti-info-alt" aria-hidden="true"></i>Can add my own restaurant</a></h4>
                            </div>
                            <div class="panel-collapse collapse" id="faq2" aria-expanded="true" role="article">
-                              <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id. </div>
+                              <div class="panel-body"> No, contact our admin for support on that </div>
                            </div>
                         </div>
                         <!-- end:Panel -->
                         <h4 class="m-t-20">Contact Customer Support</h4>
                         <p> If you"re looking for more help or have a question to ask, please </p>
-                        <p> <a href="contact.html" class="btn theme-btn m-t-15">contact us</a> </p>
+                        <p> <a href="contact.html" class="btn theme-btn m-t-15">Contact us</a> </p>
                      </div>
                      <!-- /WHY? -->
                   </div>
@@ -343,7 +343,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                            </div>
                            <div class="col-xs-12 col-sm-4 address color-gray">
                               <h5>Address</h5>
-                              <p>Concept design of oline food order and deliveye,planned as restaurant directory</p>
+                              <p>Block 10, Tampines Street 1</p>
                               <h5>Phone: <a href="tel:+080000012222">080 000012 222</a></h5>
                            </div>
                            <div class="col-xs-12 col-sm-5 additional-info color-gray">

@@ -18,7 +18,7 @@ include_once 'product-action.php'; //including controller
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="#">
-    <title>Starter Template for Bootstrap</title>
+    <title>Food</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -308,7 +308,7 @@ $item_total += ($item["price"]*$item["quantity"]); // calculating current price 
                 <!-- end:row -->
             </div>
             <!-- end:Container -->
-            <section class="app-section">
+            <!--<section class="app-section">
                 <div class="app-wrap">
                     <div class="container">
                         <div class="row text-img-block text-xs-left">
@@ -334,7 +334,7 @@ $item_total += ($item["price"]*$item["quantity"]); // calculating current price 
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- start: FOOTER -->
             <footer class="footer">
                 <div class="container">
@@ -365,7 +365,7 @@ $item_total += ($item["price"]*$item["quantity"]); // calculating current price 
                             <h5>Pages</h5>
                             <ul>
                                 <li><a href="#">Search results page</a> </li>
-                                <li><a href="#">User Sing Up Page</a> </li>
+                                <li><a href="registration.php">User Sign Up Page</a> </li>
                                 <li><a href="#">Pricing page</a> </li>
                                 <li><a href="#">Make order</a> </li>
                                 <li><a href="#">Add to cart</a> </li>
@@ -414,7 +414,7 @@ $item_total += ($item["price"]*$item["quantity"]); // calculating current price 
                                 </div>
                                 <div class="col-xs-12 col-sm-4 address color-gray">
                                     <h5>Address</h5>
-                                    <p>Concept design of oline food order and deliveye,planned as restaurant directory</p>
+                                    <p>Block 10, Tampines Street 1</p>
                                     <h5>Phone: <a href="tel:+080000012222">080 000012 222</a></h5> </div>
                                 <div class="col-xs-12 col-sm-5 additional-info color-gray">
                                     <h5>Addition informations</h5>

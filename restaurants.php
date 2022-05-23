@@ -13,7 +13,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="#">
-    <title>Starter Template for Bootstrap</title>
+    <title>Restaurants</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -39,14 +39,14 @@ session_start();
 						if(empty($_SESSION["user_id"]))
 							{
 								echo '<li class="nav-item"><a href="login.php" class="nav-link active">login</a> </li>
-							  <li class="nav-item"><a href="registration.php" class="nav-link active">signup</a> </li>';
+                                <li class="nav-item"><a href="admin" class="nav-link active">Admin</a> </li>';
 							}
 						else
 							{
 									
 									
-										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">your orders</a> </li>';
-									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">logout</a> </li>';
+										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Your orders</a> </li>';
+									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
 							}
 
 						?>
@@ -173,7 +173,7 @@ session_start();
                     </div>
                 </div>
             </section>
-            <section class="app-section">
+           <!--<section class="app-section">
                 <div class="app-wrap">
                     <div class="container">
                         <div class="row text-img-block text-xs-left">
@@ -199,7 +199,7 @@ session_start();
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
             <!-- start: FOOTER -->
             <footer class="footer">
                 <div class="container">
@@ -230,7 +230,7 @@ session_start();
                             <h5>Pages</h5>
                             <ul>
                                 <li><a href="#">Search results page</a> </li>
-                                <li><a href="#">User Sing Up Page</a> </li>
+                                <li><a href="registration.php">User Sign Up Page</a> </li>
                                 <li><a href="#">Pricing page</a> </li>
                                 <li><a href="#">Make order</a> </li>
                                 <li><a href="#">Add to cart</a> </li>
@@ -239,15 +239,10 @@ session_start();
                         <div class="col-xs-12 col-sm-3 popular-locations color-gray">
                             <h5>Popular locations</h5>
                             <ul>
-                                <li><a href="#">Sarajevo</a> </li>
-                                <li><a href="#">Split</a> </li>
-                                <li><a href="#">Tuzla</a> </li>
-                                <li><a href="#">Sibenik</a> </li>
-                                <li><a href="#">Zagreb</a> </li>
-                                <li><a href="#">Brcko</a> </li>
-                                <li><a href="#">Beograd</a> </li>
+                                <li><a href="#">Singapore</a> </li>
+                                <li><a href="#">Malaysia</a> </li>
                                 <li><a href="#">New York</a> </li>
-                                <li><a href="#">Gradacac</a> </li>
+                                <li><a href="#">Indonesia</a> </li>
                                 <li><a href="#">Los Angeles</a> </li>
                             </ul>
                         </div>
@@ -279,10 +274,10 @@ session_start();
                                 </div>
                                 <div class="col-xs-12 col-sm-4 address color-gray">
                                     <h5>Address</h5>
-                                    <p>Concept design of oline food order and deliveye,planned as restaurant directory</p>
-                                    <h5>Phone: <a href="tel:+080000012222">080 000012 222</a></h5> </div>
+                                    <p>Block 10, Tampines Street 1</p>
+                                    <h5>Phone: <a href="#">1234 5678</a></h5> </div>
                                 <div class="col-xs-12 col-sm-5 additional-info color-gray">
-                                    <h5>Addition informations</h5>
+                                    <h5>Addition information</h5>
                                     <p>Join the thousands of other restaurants who benefit from having their menus on TakeOff</p>
                                 </div>
                             </div>

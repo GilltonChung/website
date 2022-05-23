@@ -301,7 +301,7 @@ session_start(); //start temp session until logout/browser closed
             </div>
         </section>
         <!-- Featured restaurants ends -->
-        <section class="app-section">
+        <!--<section class="app-section">
             <div class="app-wrap">
                 <div class="container">
                     <div class="row text-img-block text-xs-left">
@@ -327,7 +327,7 @@ session_start(); //start temp session until logout/browser closed
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- start: FOOTER -->
         <footer class="footer">
             <div class="container">
@@ -358,7 +358,7 @@ session_start(); //start temp session until logout/browser closed
                         <h5>Pages</h5>
                         <ul>
                             <li><a href="#">Search results page</a> </li>
-                            <li><a href="#">User Sing Up Page</a> </li>
+                            <li><a href="registration.php">User Sign Up Page</a> </li>
                             <li><a href="#">Pricing page</a> </li>
                             <li><a href="#">Make order</a> </li>
                             <li><a href="#">Add to cart</a> </li>
@@ -367,16 +367,11 @@ session_start(); //start temp session until logout/browser closed
                     <div class="col-xs-12 col-sm-3 popular-locations color-gray">
                         <h5>Popular locations</h5>
                         <ul>
-                            <li><a href="#">Sarajevo</a> </li>
-                            <li><a href="#">Split</a> </li>
-                            <li><a href="#">Tuzla</a> </li>
-                            <li><a href="#">Sibenik</a> </li>
-                            <li><a href="#">Zagreb</a> </li>
-                            <li><a href="#">Brcko</a> </li>
-                            <li><a href="#">Beograd</a> </li>
-                            <li><a href="#">New York</a> </li>
-                            <li><a href="#">Gradacac</a> </li>
-                            <li><a href="#">Los Angeles</a> </li>
+                                <li><a href="#">Singapore</a> </li>
+                                <li><a href="#">Malaysia</a> </li>
+                                <li><a href="#">New York</a> </li>
+                                <li><a href="#">Indonesia</a> </li>
+                                <li><a href="#">Los Angeles</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -406,10 +401,10 @@ session_start(); //start temp session until logout/browser closed
                         </div>
                         <div class="col-xs-12 col-sm-4 address color-gray">
                             <h5>Address</h5>
-                            <p>Concept design of oline food order and deliveye,planned as restaurant directory</p>
-                            <h5>Phone: <a href="tel:+080000012222">080 000012 222</a></h5> </div>
+                            <p>Block 10, Tampines Street 1</p>
+                            <h5>Phone: <a href="#">1234 5678</a></h5> </div>
                         <div class="col-xs-12 col-sm-5 additional-info color-gray">
-                            <h5>Addition informations</h5>
+                            <h5>Addition information</h5>
                             <p>Join the thousands of other restaurants who benefit from having their menus on TakeOff</p>
                         </div>
                     </div>

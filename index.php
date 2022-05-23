@@ -14,7 +14,7 @@ session_start(); //start temp session until logout/browser closed
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="#">
-    <title>Starter Template for Bootstrap</title>
+    <title>Home</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -41,15 +41,15 @@ session_start(); //start temp session until logout/browser closed
 							<?php
 						if(empty($_SESSION["user_id"])) // if user is not login
 							{
-								echo '<li class="nav-item"><a href="login.php" class="nav-link active">login</a> </li>
-							  <li class="nav-item"><a href="registration.php" class="nav-link active">signup</a> </li>';
+								echo '<li class="nav-item"><a href="login.php" class="nav-link active">Login</a> </li>
+							  <li class="nav-item"><a href="admin" class="nav-link active">Admin</a> </li>';
 							}
 						else
 							{
 									//if user is login
 									
-									echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">your orders</a> </li>';
-									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">logout</a> </li>';
+									echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Your orders</a> </li>';
+									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
 							}
 
 						?>

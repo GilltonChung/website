@@ -133,9 +133,9 @@ if(isset($_POST['submit1'] ))
   <form class="login-form" action="index.php" method="post">
     <input type="text" placeholder="username" name="username"/>
     <input type="password" placeholder="password" name="password"/>
-    <input type="submit"  name="submit" value="login" />
+    <input type="submit"  name="submit" value="Login" />
   </form>
-  
+  <div class="cta"><a href="https://gilltonassignment2.azurewebsites.net" style="color:#f30;">Back home</a></div>
 </div>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

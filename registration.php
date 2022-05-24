@@ -103,7 +103,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
             <nav class="navbar navbar-dark">
                <div class="container">
                   <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
-                  <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/food-picky-logo.png" alt=""> </a>
+                  <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/logo.png" alt=""> </a>
                   <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                      <ul class="nav navbar-nav">
 							<li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
@@ -269,7 +269,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                   <!-- top footer statrs -->
                   <div class="row top-footer">
                      <div class="col-xs-12 col-sm-3 footer-logo-block color-gray">
-                        <a href="#"> <img src="images/food-picky-logo.png" alt="Footer logo"> </a> <span>Order Delivery &amp; Take-Out </span> 
+                        <a href="#"> <img src="images/logo.png" alt="Footer logo"> </a> <span>Order Delivery &amp; Take-Out </span> 
                      </div>
                      <div class="col-xs-12 col-sm-2 about color-gray">
                         <h5>About Us</h5>
@@ -284,7 +284,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                         <h5>How it Works</h5>
                         <ul>
                            <li><a href="#">Enter your location</a> </li>
-                           <li><a href="#">Choose restaurant</a> </li>
+                           <li><a href="restaurants.php">Choose restaurant</a> </li>
                            <li><a href="#">Choose meal</a> </li>
                            <li><a href="#">Pay via credit card</a> </li>
                            <li><a href="#">Wait for delivery</a> </li>
@@ -348,7 +348,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                            </div>
                            <div class="col-xs-12 col-sm-5 additional-info color-gray">
                               <h5>Addition informations</h5>
-                              <p>Join the thousands of other restaurants who benefit from having their menus on TakeOff</p>
+                              <p>Contact us to add a restaurant</p>
                            </div>
                         </div>
                      </div>

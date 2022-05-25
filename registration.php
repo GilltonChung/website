@@ -236,33 +236,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                   </div>
                </div>
             </section>
-            <section class="app-section">
-               <div class="app-wrap">
-                  <div class="container">
-                     <div class="row text-img-block text-xs-left">
-                        <div class="container">
-                           <div class="col-xs-12 col-sm-6  right-image text-center">
-                              <figure> <img src="images/app.png" alt="Right Image"> </figure>
-                           </div>
-                           <div class="col-xs-12 col-sm-6 left-text">
-                              <h3>The Best Food Delivery App</h3>
-                              <p>Now you can make food happen pretty much wherever you are thanks to the free easy-to-use Food Delivery &amp; Takeout App.</p>
-                              <div class="social-btns">
-                                 <a href="#" class="app-btn apple-button clearfix">
-                                    <div class="pull-left"><i class="fa fa-apple"></i> </div>
-                                    <div class="pull-right"> <span class="text">Available on the</span> <span class="text-2">App Store</span> </div>
-                                 </a>
-                                 <a href="#" class="app-btn android-button clearfix">
-                                    <div class="pull-left"><i class="fa fa-android"></i> </div>
-                                    <div class="pull-right"> <span class="text">Available on the</span> <span class="text-2">Play store</span> </div>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
+            
             <!-- start: FOOTER -->
             <footer class="footer">
                <div class="container">
@@ -303,16 +277,11 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                      <div class="col-xs-12 col-sm-3 popular-locations color-gray">
                         <h5>Popular locations</h5>
                         <ul>
-                           <li><a href="#">Sarajevo</a> </li>
-                           <li><a href="#">Split</a> </li>
-                           <li><a href="#">Tuzla</a> </li>
-                           <li><a href="#">Sibenik</a> </li>
-                           <li><a href="#">Zagreb</a> </li>
-                           <li><a href="#">Brcko</a> </li>
-                           <li><a href="#">Beograd</a> </li>
-                           <li><a href="#">New York</a> </li>
-                           <li><a href="#">Gradacac</a> </li>
-                           <li><a href="#">Los Angeles</a> </li>
+                                 <li><a href="#">Singapore</a> </li>
+                                <li><a href="#">Malaysia</a> </li>
+                                <li><a href="#">New York</a> </li>
+                                <li><a href="#">Indonesia</a> </li>
+                                <li><a href="#">Los Angeles</a> </li>
                         </ul>
                      </div>
                   </div>
@@ -344,10 +313,10 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                            <div class="col-xs-12 col-sm-4 address color-gray">
                               <h5>Address</h5>
                               <p>Block 10, Tampines Street 1</p>
-                              <h5>Phone: <a href="tel:+080000012222">080 000012 222</a></h5>
+                              <h5>Phone: <a href="tel:+080000012222">12345678</a></h5>
                            </div>
                            <div class="col-xs-12 col-sm-5 additional-info color-gray">
-                              <h5>Addition informations</h5>
+                              <h5>Addition information</h5>
                               <p>Contact us to add a restaurant</p>
                            </div>
                         </div>

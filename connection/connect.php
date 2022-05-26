@@ -1,7 +1,7 @@
 <?php
 
 //main connection file for both admin & front end
-$servername = "gilltonassignment2.mysql.database.azure.com"; //server
+$servername = "gilltonassignment2backup.mysql.database.azure.com"; //server
 $username = "gilltonadmin"; //username
 $password = "Jugular59"; //password
 $dbname = "online_rest";  //database
